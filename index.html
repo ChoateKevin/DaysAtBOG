@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Days at BMW of Grapevine</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1><span id="daysAtBOG"></span> <span class="Wonderful">Wonderful</span> Days at <br />BMW of Grapevine</h1>
+
+  <script type="text/javascript">
+    window.onload = function() {
+
+      var dateStart = new Date('07/01/2017');
+      var today = new Date();
+      var timeSinceStart = today - dateStart;
+      var daysSinceStart = Math.ceil(timeSinceStart / (1000 * 3600 * 24));
+      // console.log(dateStart);
+      // console.log(today);
+      // console.log(timeSinceStart);
+      // console.log(daysSinceStart);
+
+      document.getElementById('daysAtBOG').innerHTML = daysSinceStart;
+    }
+  </script>
+
+</body>
+
+</html>
